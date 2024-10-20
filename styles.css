@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4; /* Warna latar belakang */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+/* Header Styling */
+header {
+    background-image: url('timas.jpg'); /* Ganti dengan path gambar yang sesuai */
+    background-size: cover; /* Mengatur gambar untuk menutupi seluruh area header */
+    background-position: center; 
+    height: 150px;
+    color: white; /* Warna teks */
+    text-align: center; /* Pusatkan teks */
+    padding: 100px 50px; /* Ruang di sekitar header */
+    position: relative; /* Mengatur posisi relatif untuk elemen anak */
+}
+
+.header-container {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    align-items: center; /* Memusatkan item secara vertikal */
+    justify-content: center; /* Memusatkan item secara horizontal */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4b6581; /* Warna latar belakang footer */
+
+    color: white; /* Warna teks */
+    text-align: center; /* Pusatkan teks */
+    padding: 10px; /* Ruang di sekitar footer */
+    margin-top: auto; /* Mengatur margin atas untuk footer */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #343a40; /* Warna latar belakang sidebar */
+    padding: 20px; /* Ruang di sekitar sidebar */
+    min-width: 200px; /* Lebar minimum sidebar */
+    max-width: 250px; /* Lebar maksimum sidebar */
+    color: white; /* Warna teks */
+    overflow: hidden; /* Menyembunyikan overflow */
+}
+
+.scrollable {
+    max-height: 300px; /* Tinggi maksimum untuk area scrollable */
+    overflow-y: auto; /* Scroll vertikal jika diperlukan */
+}
+
+.sidebar ul {
+    list-style: none; /* Menghapus titik pada list */
+    padding: 0; /* Menghapus padding default */
+}
+
+.sidebar ul li {
+    margin: 10px 0; /* Jarak antar item dalam sidebar */
+}
+
+.sidebar ul li a {
+    color: white; /* Warna link */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+    transition: color 0.3s; /* Transisi untuk efek hover */
+}
+
+.sidebar ul li a:hover {
+    color: #4CAF50; /* Warna saat hover */
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+/* Tabel Styling */
+.table-container {
+    max-height: 300px; /* Tinggi maksimum untuk area scrollable */
+    overflow-y: auto; /* Scroll vertikal jika diperlukan */
+    border: 1px solid #ddd; /* Tambahkan border di sekitar tabel */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #4b6581; /* Warna latar belakang tabel */
+    color: white; /* Warna teks */
+    position: sticky; /* Membuat header tetap */
+    top: 0; /* Posisi sticky di atas */
+    z-index: 10; /* Pastikan header berada di atas isi tabel */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Warna untuk baris genap */
+}
+
+tr:hover {
+    background-color: #ddd; /* Warna saat hover */
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Border bawah untuk sel */
+}
